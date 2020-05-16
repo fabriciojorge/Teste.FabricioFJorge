@@ -1,0 +1,25 @@
+﻿/*Elementos*/
+html, body {
+    height: 100%;
+}
+
+/*IDs*/
+#rodape {
+    font-size: 11px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#principal {
+    min-height: calc(100% - 8rem);
+}
+
+/*Classes*/
+.link-menu {
+    color: #ffffff;
+}
+
+    .link-menu:hover {
+        color: #808080;
+    }

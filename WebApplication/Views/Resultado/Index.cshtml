@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Resultado";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Resultado do Problema</h2>
+<hr class="bg-dark" />
+<main>
+    <p class="text-justify">
+        Nessa página se encontra a resolução do problema da Palavra Triângulo.
+    </p>
+    <p class="text-justify">
+        No formulário abaixo, deverá ser digitada uma palavra.<br />
+        Se a palavra for número triângulo, irá ser retornado a soma dos números equivalente a cada letra. Caso contrário será retornado o valor -1.
+    </p>
+    <br />
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="txtPalavra">Digite uma palavra</label>
+                <input type="text" class="form-control" id="txtPalavra" placeholder="exemplo">
+                <div id="msgValidacao" class="invalid-feedback font-weight-bold"></div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Verificar Palavra</button>
+    </form>
+    <br />
+    <div id="resultado">
+        <h6></h6>
+    </div>
+</main>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/FormValidation.js"></script>
+}

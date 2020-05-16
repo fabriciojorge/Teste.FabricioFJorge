@@ -41,7 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FibonacciService.cs" />
+    <Compile Include="PalavraTrianguloService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ListagemNumerosService.cs" />
+    <Compile Include="QuadradosService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{58A0D5A3-0A80-4EE7-BED4-483B28370D91}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
